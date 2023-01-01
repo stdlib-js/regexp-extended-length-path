@@ -24,30 +24,38 @@ limitations under the License.
 
 > [Regular expression][regexp] to detect an [extended-length path][extended-length-path].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/regexp-extended-length-path
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var reExtendedLengthPath = require( '@stdlib/regexp-extended-length-path' );
+reExtendedLengthPath = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var reExtendedLengthPath = require( 'path/to/vendor/umd/regexp-extended-length-path/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.reExtendedLengthPath;
+})();
+</script>
 ```
 
 #### reExtendedLengthPath()
@@ -70,8 +78,13 @@ var bool = RE.test( '\\\\?\\C:\\foo\\bar' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var reExtendedLengthPath = require( '@stdlib/regexp-extended-length-path' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var RE_EXTENDED_LENGTH_PATH = reExtendedLengthPath();
 var bool;
@@ -96,6 +109,11 @@ bool = RE_EXTENDED_LENGTH_PATH.test( path );
 path = '/foo/bar';
 bool = RE_EXTENDED_LENGTH_PATH.test( path );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
