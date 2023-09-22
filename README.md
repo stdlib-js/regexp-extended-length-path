@@ -35,30 +35,20 @@ limitations under the License.
 
 > [Regular expression][regexp] to detect an [extended-length path][extended-length-path].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/regexp-extended-length-path
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var reExtendedLengthPath = require( '@stdlib/regexp-extended-length-path' );
+import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
 ```
 
 #### reExtendedLengthPath()
@@ -81,8 +71,13 @@ var bool = RE.test( '\\\\?\\C:\\foo\\bar' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var reExtendedLengthPath = require( '@stdlib/regexp-extended-length-path' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
 
 var RE_EXTENDED_LENGTH_PATH = reExtendedLengthPath();
 var bool;
@@ -107,6 +102,10 @@ bool = RE_EXTENDED_LENGTH_PATH.test( path );
 path = '/foo/bar';
 bool = RE_EXTENDED_LENGTH_PATH.test( path );
 // returns false
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -130,7 +129,7 @@ bool = RE_EXTENDED_LENGTH_PATH.test( path );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
