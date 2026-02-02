@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
+import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@v0.2.3-esm/index.mjs';
 ```
 
 #### reExtendedLengthPath()
@@ -77,7 +77,7 @@ var bool = RE.test( '\\\\?\\C:\\foo\\bar' );
 <body>
 <script type="module">
 
-import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@esm/index.mjs';
+import reExtendedLengthPath from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-extended-length-path@v0.2.3-esm/index.mjs';
 
 var RE_EXTENDED_LENGTH_PATH = reExtendedLengthPath();
 var bool;
