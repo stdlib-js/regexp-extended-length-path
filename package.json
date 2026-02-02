@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/regexp-extended-length-path",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Regular expression to detect an extended-length path.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
