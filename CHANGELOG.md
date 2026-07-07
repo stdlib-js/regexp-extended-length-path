@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-05)
+## Unreleased (2026-07-07)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`241d36c`](https://github.com/stdlib-js/stdlib/commit/241d36c44454ad127e74eb2321376de72935f65e) - **chore:** add keywords [(#13351)](https://github.com/stdlib-js/stdlib/pull/13351) _(by Philipp Burckhardt)_
 -   [`1509128`](https://github.com/stdlib-js/stdlib/commit/150912888f3eca008e21e66439108237a3d8a9e0) - **docs:** update descriptions [(#13013)](https://github.com/stdlib-js/stdlib/pull/13013) _(by Philipp Burckhardt)_
 -   [`afff37d`](https://github.com/stdlib-js/stdlib/commit/afff37ddf37a6fa9e1eef050a22e5c4efc13b664) - **docs:** add example code block [(#11725)](https://github.com/stdlib-js/stdlib/pull/11725) _(by Philipp Burckhardt)_
 
